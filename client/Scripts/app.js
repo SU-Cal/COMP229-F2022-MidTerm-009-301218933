@@ -1,3 +1,9 @@
+/* File: app.js
+Name: Calum Bashow
+Student ID# 301218933
+App: COMP229-F2022-MidTerm-301218933
+*/
+
 /* custom JS goes here */
 //Function to take in variable and redirect to delete by name
 function deleteName() {
