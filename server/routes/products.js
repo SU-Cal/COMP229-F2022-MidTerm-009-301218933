@@ -24,7 +24,7 @@ router.get("/", (req, res, next) => {
         products: products,
       });
     }
-  });
+  }).sort({Productid : 1})
 });
 
 //  GET the Product Details page in order to add a new Product
