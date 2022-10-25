@@ -1,5 +1,17 @@
 /* custom JS goes here */
+//Function to take in variable and redirect to delete by name
+function deleteName() {
+    let deleteProduct = prompt("What product would you like to delete ?:");
+    if (deleteProduct != null){
 
+    }
+    else{
+        alert("Please enter a product.")
+    }
+    let deleteLink = document.location.origin+'/products/delete/'+deleteProduct;
+
+    window.location.href = deleteLink;
+}
 
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */

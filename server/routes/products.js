@@ -98,12 +98,12 @@ router.post("/details/:id", (req, res, next) => {
 });
 
 // GET - process the delete
-router.get("/delete", (req, res, next) => {
+router.get("/delete/:id", (req, res, next) => {
 
     let id = req.params.id;
 
 
-    product.remove({_id : id}, (err) => {
+    product.deleteMany({Productname : id}, (err) => {
       if(err)
       {
         console.log(err);
